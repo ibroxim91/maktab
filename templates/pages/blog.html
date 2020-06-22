@@ -1,0 +1,116 @@
+{% extends 'wrappers/wrapper.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="blog">
+      <div class="azir-container">
+        <div class="page-header text-center">
+          <h1 class="h1">Blog</h1>
+          <div class="bread-crumb"><a class="bread-crumb__link prv-page" href="{% url 'xtb:index' %}">Bosh sahifa</a><a class="bread-crumb__link crt-page" href="">Blog</a></div>
+        </div>
+        <div class="blog-grid-sidebar">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div class="blog_sidebar" id="sidebar">
+                    <div class="sidebar_section">
+                      <div class="search">
+                        <form action="" method="GET">
+                          <input class="input-form" type="text" placeholder="Qidiruv..." name="q">
+                          <button type="submit" class="cta-btn btn-pink mt-3 ">Qidirish</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="sidebar_section">
+                      <div class="blog-categories">
+                        <h3 class="sidebar-title">Blog</h3>
+                        <ul>
+                          <li><a class="category-link" href="#"><span class="name">Yangiliklar</span><span class="quantity">(03)</span></a></li>
+                          <li><a class="category-link" href="#"><span class="name">E'lonlar</span><span class="quantity">(07)</span></a></li>
+                          <li><a class="category-link" href="#"><span class="name">Maqolalar</span><span class="quantity">(15)</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sidebar_section">
+                      <div class="feature-news">
+                        <h3 class="sidebar-title">So'ngi yangiliklar</h3>
+                        <div class="feature-news_block">
+                          <p class="date"> <i class="far fa-calendar"></i>29 Nov 2019</p><a class="title" href="blog_detail.html">A Right Media Mix Can Make The Difference</a>
+                          <p class="author">by<span>Admin</span></p>
+                        </div>
+                        <div class="feature-news_block">
+                          <p class="date"> <i class="far fa-calendar"></i>29 Nov 2019</p><a class="title" href="blog_detail.html">How I Lost The Secret Of Dazzling Success For 20 Years</a>
+                          <p class="author">yukladi<span>Admin</span></p>
+                        </div>
+                        <div class="feature-news_block">
+                          <p class="date"> <i class="far fa-calendar"></i>29 Nov 2019</p><a class="title" href="blog_detail.html">Search Engine Optimization And Advertising</a>
+                          <p class="author">by<span>Admin</span></p>
+                        </div>
+                        <div class="feature-news_block">
+                          <p class="date"> <i class="far fa-calendar"></i>29 Nov 2019</p><a class="title" href="blog_detail.html">A Right Media Mix Can Make The Difference</a>
+                          <p class="author">by<span>Admin</span></p>
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+                <div class="col-12 col-lg-8"><a class="mb-30" id="sidebar-opener" href="#"> <i class="icon_menu"></i>Menyu</a>
+                  <div class="blog-default">
+                    <div class="blog-default_group">
+                      <div class="row">
+                        <div class="col-12 col-sm-6">
+                          <div class="insight-regular">
+                            <div class="insight-img"><img src="/static/assets/svg/contactusboy.svg" alt="insights image">
+                              <p class="date">26 Nov 2019</p>
+                            </div>
+                            <div class="insight-content"><a href="blog_detail.html">Thousands Now Adware Removal Who Never Thought They Could</a>
+                              <p class="author">by<span>Admin</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                          <div class="insight-regular">
+                            <div class="insight-img"><img src="/static/assets/svg/cpp-boy.svg" alt="insights image">
+                              <p class="date">26 Nov 2019</p>
+                            </div>
+                            <div class="insight-content"><a href="blog_detail.html">How To Boost Your Traffic Of Your Blog And Destroy The Competition</a>
+                              <p class="author">by<span>Admin</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                          <div class="insight-regular">
+                            <div class="insight-img"><img src="/static/assets/svg/contactusboy.svg" alt="insights image">
+                              <p class="date">26 Nov 2019</p>
+                            </div>
+                            <div class="insight-content"><a href="blog_detail.html">Freelance Design Tricks How To Get Away With Murder In The Workplace</a>
+                              <p class="author">by<span>Admin</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                          <div class="insight-regular">
+                            <div class="insight-img"><img src="/static/assets/svg/cpp-boy.svg" alt="insights image">
+                              <p class="date">26 Nov 2019</p>
+                            </div>
+                            <div class="insight-content"><a href="blog_detail.html">Rack mount LCD monitors can save you a lot of space and help you</a>
+                              <p class="author">by<span>Admin</span></p>
+                            </div>
+                          </div>
+                        </div>
+                    
+
+                      </div>
+                    </div>
+                    <div class="pagination"><a class="pagenumber" href=""><span>1</span></a><a class="pagenumber active" href=""><span>2</span></a><a class="pagenumber" href="" id="next-btn"><span>Next</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ {% endblock %}

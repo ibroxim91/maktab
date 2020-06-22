@@ -1,0 +1,187 @@
+{% extends 'wrappers/wrapper.html' %}
+{% load static %}
+{% block content %}
+    
+    <section class="case-study mb-100">
+      <div class="azir-container">
+        <div class="page-header text-center">
+          <h1 class="h1" id="dynamic_info">Online test</h1>
+          <div class="bread-crumb"><a class="bread-crumb__link prv-page" href="{% url 'xtb:index' %}">Bosh saxifa</a><a class="bread-crumb__link crt-page" href=""></a></div>
+        </div>
+      </div>
+    </section>
+      <section class="contact-us">
+      <div class="contact-content">
+        <div class="select_scholl azir-container">
+          <div class="layout-2col-ti">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-12">
+                <div class="layout-2col-ti_left">
+                  <div class="contact-content_left">
+                    <div class="section-header-style-2">
+                      <h3 class="h3 text-center">Kerakli maktab, sinf va fanni tanlang </h3>
+                      <p class="p-16"></p>
+                      <form>
+                    <div class="d-none d-sm-none d-md-block d-lg-block">
+                    <div class="row">
+                        <div class="col-3 col-md-3 text-center">      
+                        <label for="scholls" class="label">Maktab</label>
+                        <select name="scholls" id="" class="input-form">
+                          <option value="1">1-maktab</option>
+                          <option value="1">2-maktab</option>
+                          <option value="1">3-maktab</option>
+                        </select>
+                        </div>
+                        <div class="col-3 col-md-3 text-center">
+                           <label for="scholls" class="label">Sinf</label>
+                        <select name="" id="" class="input-form">
+                          <option value="1">6-sinf</option>
+                          <option value="1">7-sinf</option>
+                          <option value="1">8-sinf</option>
+                          <option value="1">9-sinf</option>
+                          <option value="1">10-sinf</option>
+                          <option value="1">11-sinf</option>
+                        </select>
+                        </div>
+                        <div class="col-3 col-md-3 text-center">
+                        <label for="scholls" class="label">Fan</label>
+                        <select name="" id="" class="input-form">
+                          <option value="1">Fizika</option>
+                          <option value="1">Matematika</option>
+                          <option value="1">Ona-tili</option>
+                          <option value="1">Ingliz-tili</option>
+                          <option value="1">Kimyo</option>
+                          <option value="1">Biologiya</option>
+                        </select>
+                        </div>
+                        <div class="col-3 col-md-3">
+                         
+                    <a href="{% url 'xtb:ajax_test'%}" class="cta-btn btn-pink mt-4">Testga o'tish</a>
+                        </div>
+                    </div>    
+                    </div> 
+                      </form>
+
+                             <form>
+                  <div class="d-block d-sm-block d-md-none d-lg-none">      
+                    <div class="row">
+                        <div class="col-12 col-md-12 text-center">      
+                        <label for="scholls" class="label">Maktab</label>
+                        <select name="scholls" id="" class="input-form">
+                          <option value="1">1-maktab</option>
+                          <option value="1">2-maktab</option>
+                          <option value="1">3-maktab</option>
+                        </select>
+                        </div>
+                        <div class="col-12 col-md-12 text-center">
+                           <label for="scholls" class="label">Sinf</label>
+                        <select name="" id="" class="input-form">
+                          <option value="1">6-sinf</option>
+                          <option value="1">7-sinf</option>
+                          <option value="1">8-sinf</option>
+                          <option value="1">9-sinf</option>
+                          <option value="1">10-sinf</option>
+                          <option value="1">11-sinf</option>
+                        </select>
+                        </div>
+                        <div class="col-12 col-md-12 text-center">
+                        <label for="scholls" class="label">Fan</label>
+                        <select name="" id="" class="input-form">
+                          <option value="1">Fizika</option>
+                          <option value="1">Matematika</option>
+                          <option value="1">Ona-tili</option>
+                          <option value="1">Ingliz-tili</option>
+                          <option value="1">Kimyo</option>
+                          <option value="1">Biologiya</option>
+                        </select>
+                        </div>
+
+                        <div class="col-12 col-md-12">
+                            <a href="{% url 'xtb:ajax_test'%}" class="cta-btn btn-pink">Testga o'tish</a>
+                        </div>
+
+                    </div>    
+                  </div>    
+                      </form>
+                    
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </section>
+
+<style>
+.select_scholl{
+  padding:10px;
+  border: 1px black solid;
+  border-radius:10px;
+  box-shadow: 4px 6px 8px black;
+  width:95%;
+
+}
+
+.label{
+  padding:2px;
+  font-size:15px;
+}
+	.scholl{
+		font-size:25px;
+		box-shadow: 3px 5px 7px silver;
+	}
+	
+	.scholl:hover{
+		font-size:bold;
+		box-shadow: 3px 5px 8px black;
+		letter-spacing:3px;
+  }
+
+
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid silver;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: silver transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1){
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2){
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3){
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring{
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+{% endblock %}

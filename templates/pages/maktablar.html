@@ -1,0 +1,201 @@
+{% extends 'wrappers/wrapper.html' %}
+{% load static %}
+{% block content %}
+    
+    <section class="case-study mb-70">
+      <div class="azir-container">
+        <div class="page-header text-center">
+          <h1 class="h1" id="dynamic_info">Online test</h1>
+          <div class="bread-crumb"><a class="bread-crumb__link prv-page" href="{% url 'xtb:index' %}">Bosh saxifa</a><a class="bread-crumb__link crt-page" href=""></a></div>
+        </div>
+      </div>
+    </section>
+      <section class="contact-us">
+<form action="{% url 'xtb:ajax_test'%}" method='GET'>          
+<div class="d-none d-sm-none d-md-block d-lg-block container" style="background-image: radial-gradient(#28a745,#3262F2,#f6f6f6);color:white;border-radius:15px;">
+<br /><h2 class="h2 text-center">Kerakli maktab, sinf va fanni tanlang !!! </h2><br/><br/>   
+<div class="row">
+<div class='col-3 col-md-3'>                
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Maktab</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>---Tanlang---</option>
+    <option value="1">1-maktab</option>
+    <option value="2">2-maktab</option>
+    <option value="3">3-maktab</option>
+    <option value="3">4-maktab</option>
+    <option value="3">5-maktab</option>
+    <option value="3">6-maktab</option>
+    <option value="3">7-maktab</option>
+  </select>
+</div>
+</div>
+<div class='col-3 col-md-3'>                
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Sinf&nbsp;&nbsp;</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>---Tanlang---</option>
+    <option value="1">5-sinf</option>
+    <option value="2">6-sinf</option>
+    <option value="3">7-sinf</option>
+    <option value="3">8-sinf</option>
+    <option value="3">9-sinf</option>
+    <option value="3">10-sinf</option>
+    <option value="3">11-sinf</option>
+  </select>
+</div>
+</div>
+<div class='col-3 col-md-3'>                
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Fan&nbsp;&nbsp;&nbsp;</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>---Tanlang---</option>
+    <option value="1">Algebra</option>
+    <option value="2">Fizika</option>
+    <option value="3">Geografiya</option>
+    <option value="3">Geometriya</option>
+    <option value="3">Informatika</option>
+    <option value="3">Zoologiya</option>
+  </select>
+</div>
+</div>
+<div class='col-3 col-md-3'>
+<div class="input-group mb-3">                    
+<button class="btn btn-primary" type="submit">Testga o'tish</button>
+</div>
+</div>
+</div>
+<br />
+</div>
+</form>
+<form action="{% url 'xtb:ajax_test'%}" method='GET'>
+<div class="d-block d-sm-block d-md-none d-lg-none" style="background-image: radial-gradient(#28a745,#3262F2,#f6f6f6);color:white;">
+<br /><h6 class="h6 text-center">Kerakli maktab, sinf va fanni tanlang !!! </h6><br/> 
+<div class="row">
+<div class='col-12 col-md-12'>                
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Maktab-></label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>---Tanlang---</option>
+    <option value="1">1-maktab</option>
+    <option value="2">2-maktab</option>
+    <option value="3">3-maktab</option>
+    <option value="3">4-maktab</option>
+    <option value="3">5-maktab</option>
+    <option value="3">6-maktab</option>
+    <option value="3">7-maktab</option>
+  </select>
+</div>
+</div>
+<div class='col-12 col-md-12'>                
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Sinf----></label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>---Tanlang---</option>
+    <option value="1">5-sinf</option>
+    <option value="2">6-sinf</option>
+    <option value="3">7-sinf</option>
+    <option value="3">8-sinf</option>
+    <option value="3">9-sinf</option>
+    <option value="3">10-sinf</option>
+    <option value="3">11-sinf</option>
+  </select>
+</div>
+</div>
+<div class='col-12 col-md-12'>                
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text bg-danger text-white" for="inputGroupSelect01">Fan----></label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>---Tanlang---</option>
+    <option value="1">Algebra</option>
+    <option value="2">Fizika</option>
+    <option value="3">Geografiya</option>
+    <option value="3">Geometriya</option>
+    <option value="3">Informatika</option>
+    <option value="3">Zoologiya</option>
+  </select>
+</div>
+</div>
+<div class='col-12 col-md-12 text-center'>
+<div class="input-group mb-3">                    
+<button class="btn btn-primary" type="submit">Testga o'tish</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+          </section>
+
+<style>
+.label{
+  padding:2px;
+  font-size:15px;
+}
+	.scholl{
+		font-size:25px;
+		box-shadow: 3px 5px 7px silver;
+	}
+	
+	.scholl:hover{
+		font-size:bold;
+		box-shadow: 3px 5px 8px black;
+		letter-spacing:3px;
+  }
+
+
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid silver;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: silver transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1){
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2){
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3){
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring{
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+{% endblock %}

@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shahrixon Xalq Ta'lim Bo'limi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="keywords" content="Andijon viloyati, Shahrixon tumani, Xalq Ta'lim Bo'limi">
+    <meta name="author" content="Program Master | Abdurakhmon Rashidov">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/button_style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/custom_bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/elegant.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/icomoon.css' %}">
+    <link rel="shortcut icon" href="{% static 'assets/images/fav.png' %}">
+  </head>
+  <body>
+
+<style>
+  .input-form{
+    padding-top: 10px;
+  }
+.page-header_blog, .page-header_event {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0; }
+  div>#loader{
+        -webkit-animation-name: fadeOut;
+        -o-animation-name: fadeOut;
+        animation-name: fadeOut;
+        -webkit-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-iteration-count: 25;
+        -o-animation-iteration-count: 25;
+        animation-iteration-count: 25;
+
+    }
+    @-webkit-keyframes fadeOut{
+        0%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+      @keyframes fadeOut{
+        0%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+
+</style>
+    
+    <header>
+      <div class="top-nav">
+        <div class="azir-container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="top-nav_left">
+                <div class="top-nav_left--content email inline-block"><i class="fas fa-envelope"></i>shahrixonxtb@gmail.com</div>
+                <div class="top-nav_left--content phone inline-block"><i class="fas fa-phone-alt"></i>001-12-88888</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="top-nav_right text-lg-right"> 
+                <div class="social inline-block"><a class="fab fa-facebook-f" href="https://www.facebook.com/"></a><a class="fab fa-telegram" href="https://twitter.com/"></a><a class="fab fa-instagram" href="https://www.invisionapp.com/"></a><a class="fab fa-whatsapp" href="https://www.invisionapp.com/"></a><a class="fab fa-vk" href="https://www.invisionapp.com/"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="azir-container">
+          <div class="row align-items-center">
+            <div class="col-6 order-1 col-lg-2"><a class="logo" href="{% url 'xtb:index' %}"><img src="/static/assets/images/logo.png" alt="logo"></a></div>
+            <div class="col-12 order-3 order-lg-2 col-lg-8">
+              <div class="navigation text-right">
+                <ul>
+                  <li class="navigtion-item active"><a class="navigation-link" href="{% url 'xtb:index' %}">Bosh sahifa</a>
+              
+                  </li>
+                  <li class="navigtion-item"><a class="navigation-link" href="{% url 'xtb:page_views' 'blog' %}">Blog</a><i class="submenu-opener"></i>
+                    <div class="dropdown_menu">
+                      <ul>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'blog' %}">Yangiliklar</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'blog' %}">E'lonlar</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'blog' %}">Maqolalar</a></li>              
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navigtion-item"><a class="navigation-link" href="{% url 'xtb:page_views' 'online-edu' %}">Ta'lim</a><i class="submenu-opener"></i>
+                    <div class="dropdown_menu">
+                      <ul>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'maktablar' %}">Online Ta'lim</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'library' %}">Elektron kutubxona</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'files' %}">Boshqa fayllar</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                   <li class="navigtion-item"><a class="navigation-link" href="{% url 'xtb:page_views' 'files' %}">O'qituvchilarga</a><i class="submenu-opener"></i>
+                    <div class="dropdown_menu">
+                      <ul>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'files' %}">Dars ishlanmalar</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'files' %}">Konspektlar</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'files' %}">Testlar</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'files' %}">Boshqa fayllar</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navigtion-item"><a class="navigation-link" href="{% url 'xtb:page_views' 'chiefs' %}">Faoliyat</a><i class="submenu-opener"></i>
+                    <div class="dropdown_menu">
+                      <ul>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'chiefs' %}">Rahbariyat</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'blog' %}">E'lonlar</a></li>
+                        <li><a class="dropdown_link" href="{% url 'xtb:page_views' 'statistics' %}">Hisobotlar</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navigtion-item"><a class="navigation-link" href="{% url 'xtb:page_views' 'maktablar' %}">Online Test</a></li>
+                  <li class="navigtion-item"><a class="navigation-link" href="{% url 'xtb:page_views' 'contact' %}">Aloqa</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 order-2 order-lg-3 col-lg-2">
+              <div class="page-function text-right">
+                <div class="function-btn inline-block"><a href="#" id="search"><i class="icon_search"></i></a></div>
+                {# <div class="function-btn inline-block"><a href="#" id="cart"><i class="icon_bag_alt"></i></a></div> #}
+                <div class="function-btn nav-bar inline-block"><a href="#" id="open-menu-sidebar"><i class="icon_menu"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+
+     <footer>
+      <div class="footer-top">
+        <div class="azir-container">
+          <div class="row justify-content-between">
+            <div class="col-12 col-lg-4">
+              <div class="logo"><img src="/static/assets/images/logo.png" alt="logo"></div>
+              <a class="website-introduce" href="{% url 'xtb:index' %}">Andijon viloyati Shahrihon tumaniga qarashli Xalq Ta'limi Bo'limi boshqarmasi rasmiy sayti.</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-lg-5">
+              <h5 class="footer-title">Sahifalar</h5>
+              <ul class="footer-links_group inline-block">
+                <li><a class="footer-link" href="{% url 'xtb:index' %}">Bosh sahifa</a></li>
+                <li><a class="footer-link" href="{% url 'xtb:page_views' 'contact' %}">Aloqa</a></li>
+                <li><a class="footer-link" href="{% url 'xtb:page_views' 'online-edu' %}">Ta'lim</a></li>
+            
+              </ul>
+              <ul class="footer-links_group inline-block">
+                <li><a class="footer-link" href="{% url 'xtb:page_views' 'chiefs' %}">Biz haqimizda</a></li>
+                <li><a class="footer-link" href="{% url 'xtb:page_views' 'maktablar' %}">Online Test</a></li>
+                <li><a class="footer-link" href="{% url 'xtb:page_views' 'files' %}">O'qituvchilarga</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-lg-3 "> 
+               <h5 class="footer-title">Aloqa</h5>
+              <ul class="ul-16">
+                <li class="website-introduce"> <i class="fas fa-phone-alt"></i> 001-12-88888</li>
+                <li class="website-introduce"> <i class="fas fa-map-marker-alt"></i>  Muqumiy ko'chasi 24-uy, Shahrixon</li>
+                <li class="website-introduce"> <i class="fas fa-envelope"></i>  infoaxtbshahrixon@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="azir-container">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <p class="copyright">@2020 <a href="http://pmaster.uz">Program Master</a>. All rights reserved.</p>
+            </div>
+            <div class="col-4">
+              <div class="footer-socials text-right"><a class="fab fa-facebook-f" href="https://www.facebook.com/"></a><a class="fab fa-telegram" href="https://twitter.com/"></a><a class="fab fa-instagram" href="https://www.invisionapp.com/"></a><a class="fab fa-whatsapp" href="https://www.invisionapp.com/"></a><a class="fab fa-vk" href="https://www.invisionapp.com/"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static 'assets/js/jquery-3.4.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'assets/js/numscroller-1.0.js' %}"></script>
+    <script src="{% static 'assets/js/chart.js' %}"></script>
+    <script src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+  </body>
+</html>
+</html>

@@ -1,0 +1,269 @@
+{% extends 'wrappers/wrapper.html' %}
+{% load static %}
+{% block content %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>   
+    
+    <section class="case-study mb-50">
+      <div class="azir-container">
+        <div class="page-header text-center">
+          <h1 class="h1" id="dynamic_info">Online Test</h1>
+          <div class="bread-crumb"><a class="bread-crumb__link prv-page" href="{% url 'xtb:index' %}">Bosh sahifa</a><a class="bread-crumb__link crt-page" href=""></a></div>
+        </div>
+        </div>
+      </section>
+
+        <section class="featured-cases mt-2 mb-5 m-2">
+          <div class="featured-cases_bottom featured-cases_bottom__style2" style="background-color:#ced6ed;color:black; border-radius:15px;">
+             <br /> 
+            <div class="study-case-group">
+              <div class="row" id="dynamic_div" style="margin:0px 20px;">
+                <div class="col-md-3">
+                  <button class="btn btn-default bg-white">6-sinf Fizika</button>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <h4 class="timer text-center"  style="float:right; padding:3px;">
+                      23:58:33
+                    </h4> 
+                </div>
+                <div class="col-md-3">
+                  <a href="#" class="btn btn-danger" style="float:right;">Testni yakunlash</a>
+                </div>
+                <hr>
+              <div class="col-md-12 mt-4">
+
+                <ul class="numbers">
+                  {% for number in numbers %}
+                  <a href="#" onclick="AddStyle({{ number}})"><li id="num_{{ number }}" class="badge badge-pill" style="background-color:white;color:blue; margin:4px;">{{ number }}</li></a>
+                  
+               {% endfor %}
+                </ul>
+              </div>
+              <hr>
+              <div class="col-md-12" style="background-color:white;">
+                <h4 class="h4 text-center"><b>1.Tok kuchi nimada o'lchanadi?</b></h4>
+              </div>
+              <hr>
+			  
+			  
+              <div class="d-none d-sm-none d-md-block d-lg-block container">
+                <form action="#" id="ajax_form">
+				  <div class="row">
+					<div class='col-1 col-md-1'></div>
+					<div class='col-4 col-md-4 btn btn-light text-left'>
+					<span class="badge badge-primary" style="font-size:1em;">A</span>Ampermetrda
+					</div>
+					<div class='col-2 col-md-2'></div>
+					<div class='col-4 col-md-4 btn btn-light text-left'>
+					<span class="badge badge-primary" style="font-size:1em;">B</span>Voltmetrda
+					</div>
+					<div class='col-1 col-md-1'></div>
+				   </div><br />
+				   <div class="row">
+					<div class='col-1 col-md-1'></div>
+					<div class='col-4 col-md-4 btn btn-light text-left'>
+					<span class="badge badge-primary" style="font-size:1em;">C</span>Barometrda
+					</div>
+					<div class='col-2 col-md-2'></div>
+					<div class='col-4 col-md-4 btn btn-light text-left'>
+					<span class="badge badge-primary" style="font-size:1em;">D</span>To'g'ri javob yo'q
+					</div>
+					<div class='col-1 col-md-1'></div>
+				   </div>
+
+					</form>
+			</div>
+			
+			
+			<div class="d-block d-sm-block d-md-none d-lg-none container">
+			<div class='col-12 col-md-12 btn btn-light text-left'>
+					<span class="badge badge-primary" style="font-size:1em;">A</span>Ampermetrda
+			</div>
+			<div class='col-12 col-md-12 btn btn-light text-left'>
+					<span class="badge badge-primary" style="font-size:1em;">B</span>Voltmetrda
+			</div>		
+			<div class='col-12 col-md-12 btn btn-light text-left'>
+					<span class="badge badge-primary" style="font-size:1em;">C</span>Barometrda
+			</div>		
+			<div class='col-12 col-md-12 btn btn-light text-left'>
+				<span class="badge badge-primary" style="font-size:1em;">D</span>To'g'ri javob yo'q
+			</div>		
+			</div>
+					
+			
+            <hr>
+              </div>
+        
+            </div>
+          </div>
+        </section>
+  
+           <script src="{% static 'assets/js/jquery-3.4.0.min.js' %}"></script>
+<script>
+  function AddStyle(number){
+    var num = document.getElementById('num_'+number);
+    num.style="background-color:green; color:#fff;";
+  var form = $("#ajax_form").serialize();
+  console.log(form)
+  }
+</script>        
+
+{% include 'pages/taymerjs.html'%}
+
+
+<style>
+.numbers li{
+  display:inline-block;
+  font-size:17px;
+}
+.variant li{
+  width:100%;
+}
+.badge-default{
+ background-color: silver;
+}
+	
+hr {
+  width:100%;
+  height:2px;
+  border-top:1px solid #f7f5ef;
+  display:block;
+
+}
+.timer{
+  margin-right:15px;
+  font-size:26px;
+  color:white;
+  border:1px black solid;
+  border-radius:10px;
+  background:#151313;
+}
+  
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid silver;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: silver transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1){
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2){
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3){
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring{
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+	
+</style>
+
+<script>
+	function LoadingClass(){
+	
+		let dynamic_div = document.getElementById('dynamic_div');
+     document.getElementById('dynamic_info').innerHTML='Sinflar';
+    let = loading = '<div class="col-md-12"><div class="text-center">';
+    loading += '<div class="lds-ring"><div></div><div></div><div></div></div>';
+    loading += '</div></div>';
+
+     dynamic_div.innerHTML=loading;
+                  
+            
+		let col_md_6 = '<p>';
+    setTimeout(() => {
+		for(let i=1; i < 12; i++){
+		
+			col_md_6 +='<div class="col-md-6">';
+			col_md_6 +='<div class="scholl text-center p-2 mb-4 bg-white rounded">';
+			col_md_6 +='<a href="#" onclick="LoadingPredmets()">'+ i +'-sinf</a></div></div>';
+		
+		}
+			col_md_6 +='</p>';
+			dynamic_div.innerHTML=col_md_6;
+       }, 1000);
+
+	};
+
+  function LoadingPredmets(){
+    console.log('work');
+     document.getElementById('dynamic_info').innerHTML='Fanlar';
+    let dynamic_div = document.getElementById('dynamic_div');
+    let = loading = '<div class="col-md-12"><div class="text-center">';
+    loading += '<div class="lds-ring"><div></div><div></div><div></div></div>';
+    loading += '</div></div>';
+    dynamic_div.innerHTML=loading;
+                  
+            
+    let col_md_6 = '<p>';
+    let predmets = ['Tarix','Kimyo','Fizika','Ona-tili','Matematika','Ingliz-tili','Biologiya']
+    setTimeout(() => {
+    for(let i=1; i < predmets.length; i++){
+    console.log('working');
+      col_md_6 +='<div class="col-md-6">';
+      col_md_6 +='<div class="scholl text-center p-2 mb-4 bg-white rounded">';
+      col_md_6 +='<a href="#" onclick="LoadingTest()">'+ predmets[i] +'</a></div></div>';
+    
+    }
+      col_md_6 +='</p>';
+      dynamic_div.innerHTML=col_md_6;
+       }, 1000);
+
+  };
+
+    function LoadingTest(){
+       console.log('work');
+     document.getElementById('dynamic_info').innerHTML='<h4>1-savol<br></h4>Tok kuchi nimada o`lchanadi';
+    let dynamic_div = document.getElementById('dynamic_div');
+    let = loading = '<div class="col-md-12"><div class="text-center">';
+    loading += '<div class="lds-ring"><div></div><div></div><div></div></div>';
+    loading += '</div></div>';
+    dynamic_div.innerHTML=loading;
+                  
+            
+    let col_md_6 = '<p>';
+    let variant = ['Ampermetrda','Voltmetrda','Barometrda','To`g`ri javob yo`q']
+    setTimeout(() => {
+    for(let i=0; i < variant.length; i++){
+    console.log('working');
+      col_md_6 +='<div class="col-md-6">';
+      col_md_6 +='<div class="scholl text-center p-2 mb-4 bg-white rounded">';
+      col_md_6 +='<a href="#" onclick="LoadingTest()">'+ variant[i] +'</a></div></div>';
+    
+    }
+      col_md_6 +='</p>';
+      dynamic_div.innerHTML=col_md_6;
+   document.getElementById('button').style="display:block";
+       }, 1000);
+
+  };
+</script>
+{% endblock %}

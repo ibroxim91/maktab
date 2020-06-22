@@ -1,0 +1,88 @@
+{% extends 'wrappers/wrapper.html' %}
+{% load static %}
+{% block content %}
+
+
+    <section class="contact-us">
+      <div class="contact-content">
+        <div class="azir-container">
+          <div class="layout-2col-ti">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-6">
+                <div class="layout-2col-ti_left">
+                  <div class="contact-content_left">
+                    <div class="section-header-style-2">
+                      <h1 class="h1">Sizga qanday yordam bera olamiz ?</h1>
+                      <p class="p-16">Agar sizda boshqarma faoliyatiga oid yoki ta'limga aloqador savollar bo'lsa ularni bizga yozib qoldiring.</p>
+                      <form>
+                        <input class="input-form" type="text" placeholder="Ismingiz">
+                        <input class="input-form" type="text" placeholder="Telefon raqamingiz">
+                        <input class="input-form" type="text" placeholder="Xabar  mavzusi">
+                        <textarea class="textarea-form" name="" cols="30" rows="5" placeholder="Xabar matni"></textarea>
+                        <button type="submit" class="cta-btn btn-pink">Yuborish</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="layout-2col-ti_right">
+                  <div class="contact-infomation">
+                  <div class="azir-container">
+                    <div class="infomation-box_wrapper">
+                      <div class="infomation-box">
+                        <ul class="sos_seti">
+                          <li><a href="#"><span style="width:40px;" class="badge badge-pill"><i class="fab fa-facebook-f"></i></span></a></li>
+                          <li><a href="#"><span style="width:40px;" class="badge badge-pill"><i class="fab fa-telegram"></i></span></a></li>
+                           <li><a href="#"><span style="width:40px;" class="badge badge-pill"><i class="fab fa-instagram"></i></span></a></li>
+                        </ul>
+                        <h5 class="mb-20 h5">Manzil</h5>
+                        <ul class="ul-16">
+                          <li class="website-introduce"> <i class="fas fa-phone-alt"></i> 001-12-88888</li>
+                          <li class="website-introduce"> <i class="fas fa-map-marker-alt"></i>  Muqumiy ko'chasi 24-uy, Shahrixon</li>
+                          <li class="website-introduce"> <i class="fas fa-envelope"></i>  infoaxtbshahrixon@gmail.com</li>
+                        </ul>
+                        <h5 class="mb-20 h5">Ish vaqtlari</h5>
+                        <ul class="opening-hours">
+                          <li>Dushanba - Juma<span>10:00 - 18:00</span></li>
+                          <li>Shanba<span>10:00 - 17:00</span></li>
+                          <li>Yakshanba<span style="color:red;">Dam olish kuni</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <section class="partners">
+      <div class="azir-container">
+        <div class="partners-group">
+          <a class="partner" href="#"><img src="/static/assets/images/partner-1.png" alt="partner logo"></a>
+          <a class="partner" href="#"><img src="/static/assets/images/partner-2.png" alt="partner logo"></a>
+          <a class="partner" href="#"><img src="/static/assets/images/partner-3.png" alt="partner logo"></a>
+          <a class="partner" href="#"><img src="/static/assets/images/partner-4.png" alt="partner logo"></a>
+          <a class="partner" href="#"><img src="/static/assets/images/partner-5.png" alt="partner logo"></a>
+          <a class="partner" href="#"><img src="/static/assets/images/partner-3.png" alt="partner logo"></a>
+        </div>
+      </div>
+    </section>
+   <style>
+     .sos_seti li{
+      display:inline-block;
+      padding-left:15px;
+     }
+       .sos_seti span{
+      border: 1px green solid;
+     }
+        .sos_seti span:hover{
+      transition:1s;
+      border: 1px blue solid;
+      background:orange;
+     }
+   </style> 
+ {% endblock %}

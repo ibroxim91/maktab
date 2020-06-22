@@ -1,0 +1,602 @@
+{% extends 'wrappers/wrapper.html' %}
+{% load static %}
+{% block content %}
+{% include 'pages/styles.html'%}
+<!--
+    <section class="h1-banner" >
+      <div class="azir-container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-8 col-md-7">
+            <div class="banner-content">
+              <h1 class="heading banner-title animated fadeInLeft">Shahrixon Tuman Xalq Ta'lim Bo'limi</h1>
+              <p class="p banner-paragraph animated fadeInLeft">Andijon viloyati Shahrihon tumaniga qarashli Xalq Ta'limi Bo'limi boshqarmasining rasmiy sayti.</p>
+              <div class="banner-btn-group d-flex align-items-center animated fadeInLeft"><a class="banner-qoute bg-primary" href="{% url 'xtb:page_views' 'contact' %}">Bog'lanish</a>
+                 <div class="banner-video"><a class="d-flex align-items-center" href="#">
+                      <div class="video-btn"><i class="fas fa-play inline-block"></i></div>
+                      <p class="inline-block">How we work</p></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+#thumbnail-preview-indicators .slides .slide-1 {
+   border-radius:15px;
+ border:2px solid black;
+ background-image: url(/static/assets/images/news2.jpeg); 
+}
+#thumbnail-preview-indicators .slides .slide-2 {
+ border-radius:15px;
+ border:2px solid black;
+ background-image: url(/static/assets/images/news3.jpeg);
+}
+#thumbnail-preview-indicators .slides .slide-3 {
+   border-radius:15px;
+ border:2px solid black;
+ background-image: url(/static/assets/images/talim.jpeg);
+}
+
+</style>
+<div class="row">
+  <div class="col-md-8">
+    <div class="row">
+      <div class="col-md-12">
+    
+  <div class="corousel" style="margin:10px;">
+    
+
+
+<div id="thumbnail-preview-indicators" class="carousel slide" data-ride="carousel">
+ <!-- Indicators -->
+ <ol class="carousel-indicators">
+ <li data-target="#thumbnail-preview-indicators" data-slide-to="0" class="active">
+ <div class="thumbnail">
+ <img class="img-responsive"  src="https://bootstraptema.ru/snippets/slider/2017/thumbslider/thumbslider-1.jpg">
+ </div>
+ </li>
+ <li data-target="#thumbnail-preview-indicators" data-slide-to="1">
+ <div class="thumbnail">
+ <img class="img-responsive" src="https://bootstraptema.ru/snippets/slider/2017/thumbslider/thumbslider-2.jpg">
+ </div>
+ </li>
+ <li data-target="#thumbnail-preview-indicators" data-slide-to="2">
+ <div class="thumbnail">
+ <img class="img-responsive" src="https://bootstraptema.ru/snippets/slider/2017/thumbslider/thumbslider-3.jpg">
+ </div>
+ </li>
+ </ol>
+ <div class="carousel-inner">
+ <div class="item slides active">
+ <div class="slide-1"></div>
+ <div class="container">
+ <div class="carousel-caption">
+ <h1>Shaxrixon tumani xalq ta'limi bo'limi</h1>
+ <p>Ta'lim, ma'orif ,maktablar o'quv qo'llanmalari ,testlar</p>
+ <p class="lead"><a class="btn btn-lg btn-link" href="#" role="button">Batafsil</a></p>
+ </div>
+ </div>
+ </div>
+ <div class="item slides">
+ <div class="slide-2"></div>
+ <div class="container">
+ <div class="carousel-caption">
+ <h1>Shaxrixon tumani xalq ta'limi bo'limi</h1>
+ <p>Ta'lim, ma'orif ,maktablar o'quv qo'llanmalari ,testlar</p>
+ <p><a class="btn btn-lg btn-link" href="#" role="button">Batafsil</a></p>
+ </div>
+ </div>
+ </div>
+ <div class="item slides">
+ <div class="slide-3"></div>
+ <div class="container">
+ <div class="carousel-caption">
+  <h1>Shaxrixon tumani xalq ta'limi bo'limi</h1>
+ <p>Ta'lim, ma'orif ,maktablar o'quv qo'llanmalari ,testlar</p>
+ <p><a class="btn btn-lg btn-link" href="#" role="button">Batafsil</a></p>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <a class="left carousel-control" href="#thumbnail-preview-indicators" style="background:none;" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+
+
+ <a class="right carousel-control"  style="background:none;"  href="#thumbnail-preview-indicators" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+ </div>
+
+
+   </div>
+   </div>
+ 
+
+<div class="col-md-12">
+ <div class="row" style="margin:3px 5px;">
+
+ <div class="col-md-3 col-sm-6">
+ <div class="serviceBox">
+ <div class="service-icon">
+ <i class="fa fa-clock"></i>
+ </div>
+ <h3 class="title">Online test tizimi</h3>
+ <p class="description">
+ Lorem ipsum dolor sit amet
+ </p>
+ </div>
+ </div>
+
+ <div class="col-md-3 col-sm-6">
+ <div class="serviceBox">
+ <div class="service-icon">
+ <i class="fa fa-file-word"></i>
+ </div>
+ <h3 class="title">Dars ishlanmalari</h3>
+ <p class="description">
+ Lorem ipsum dolor sit amet,
+ </p>
+ </div>
+ </div>
+ 
+ <div class="col-md-3 col-sm-6">
+ <div class="serviceBox">
+ <div class="service-icon">
+ <i class="fa fa-file-pdf"></i>
+ </div>
+ <h3 class="title">O'quv qo'llanmalari</h3>
+ <p class="description">
+ Lorem ipsum dolor sit amet
+ </p>
+ </div>
+ </div>
+
+  <div class="col-md-3 col-sm-6">
+ <div class="serviceBox">
+ <div class="service-icon">
+ <i class="fa fa-book"></i>
+ </div>
+ <h3 class="title">Elektron kutubxona</h3>
+ <p class="description">
+ Lorem ipsum dolor sit amet
+ </p>
+ </div>
+ </div>
+
+ </div><!-- /.row -->
+ </div><!-- /.col-md-12 -->
+ </div><!-- /.col-md-12 -->
+ </div><!-- /.col-md-12 -->
+
+
+
+
+
+<br>
+<br>
+<div class="col-md-4" style="padding-left:1px;">
+  <div class="row" style="margin:10px 10px;">
+    <div class="col-12">
+      <form   style="width:80%;" class="d-none d-sm-none d-md-block d-lg-block">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Login</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+    <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Parol</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10 offset-sm-2"></div>
+    <div class="col-sm-10 offset-sm-2">
+      <button type="submit" class="btn btn-primary">Kirish</button>
+      <a style="margin-left:15px;"  href="#" class="">Ro'yxatdan o'tish</a>
+    </div>
+  </div>
+</form>
+    </div>
+    <div class="text-center" style="margin:0px auto;">
+  <h3><b>Foydali qo'llanmalar</b></h3>
+</div>
+ <div class="col-12">
+   
+
+    <div class="sidebar">
+
+
+
+
+<div class="clear" style="clear:both;"></div>
+
+<div class="container-fluid" style="width:100%;">
+  
+  <div class="last_news">
+    <h4>Informatikadan test savollari</h4>
+    <p class="card-text">Andijon viloyati Shahrihon tumaniga qarashli Xalq Ta'limi Bo'limi boshqarmasi rasmiy sayti.</p>
+  </div>
+
+<hr>
+  <div class="last_news">
+    <h4>Informatikadan test savollari</h4>
+    <p class="card-text">Andijon viloyati Shahrihon tumaniga qarashli Xalq Ta'limi Bo'limi boshqarmasi rasmiy sayti.</p>
+  </div>
+
+<hr>
+  <div class="last_news">
+    <h4>Informatikadan test savollari</h4>
+    <p class="card-text">Andijon viloyati Shahrihon tumaniga qarashli Xalq Ta'limi Bo'limi boshqarmasi rasmiy sayti.</p>
+  </div>
+
+<hr>
+  <div class="last_news">
+    <h4>Informatikadan test savollari</h4>
+    <p class="card-text">Andijon viloyati Shahrihon tumaniga qarashli Xalq Ta'limi Bo'limi boshqarmasi rasmiy sayti.</p>
+  </div>
+<hr>
+    <div class="last_news">
+    <h4>Informatikadan test savollari</h4>
+    <p class="card-text">Andijon viloyati Shahrihon tumaniga qarashli Xalq Ta'limi Bo'limi boshqarmasi rasmiy sayti.</p>
+  </div>
+<hr>
+    <div class="last_news">
+    <h4>Informatikadan test savollari</h4>
+    <p class="card-text">Andijon viloyati Shahrihon tumaniga qarashli Xalq Ta'limi Bo'limi boshqarmasi rasmiy sayti.</p>
+  </div>
+<hr>
+</div>
+
+
+   </div>
+   </div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+  
+
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Ta'lim yangiliklari</a></li>
+  <li><a data-toggle="tab" href="#menu1">Maktabimiz yangiliklari</a></li>
+  <li><a data-toggle="tab" href="#menu2">Boshqalar</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>Ta'lim</h3>
+    <div class="row">
+   <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu3.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+           <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu3.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+           <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu3.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+             <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu3.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Maktab</h3>
+    <div class="row">
+   <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu2.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+           <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu2.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+           <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu2.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+             <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu2.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>Boshqalar</h3>
+     <div class="row">
+   <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+           <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+           <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+
+             <div class="col-md-3 mt-3">
+          <div class="card">
+            <img class="card-img" width="275" height="180"  src="static/assets/images/edu.jpeg" alt="Card image">
+            <div class="card-img-overlay">
+              <p class="card-text"  id="news_text">I'm text that has a background image!</p>
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+</div>
+</div>
+  <!--   <section class="h2-section1">
+      <div class="azir-container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="welcome-header">
+              <div class="section-header-style-3 text-center text-md-left">
+                <h1 class="h1">Online Test!</h1>
+                <h6 class="h6">"Biz barcha fanlardan online test tizimini ham yo'lga qo'yganmiz"</h6>
+                <p class="p">Tuman bo'yicha istalgan o'quvchi istalgan vaqtda hohlagan fanidan online test topshirish imkoniyatiga ega. Maktabingizni ,sinfingizni va fanni tanlab turli qiyinlik darajalariga ega bo'lgan testlarda o'z bilimingizni sinab ko'ring.</p><a class="btn-outline-yellow" href="{% url 'xtb:page_views' 'test' %}">Sinab ko'rish</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="h1-section1">
+              <div class="h1-section-1_industry" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                <h3 class="h3">Testlar</h3>
+                <div class="industry-links">
+                  <ul>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Ona tili</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Matematika</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Tarix</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Biologiya</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">O'zbekiston tarixi</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Fizika</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Geometriya</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Adabiyot</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Ingliz tili</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Rus tili</a></li>
+                    <li><a class="industry-link" href="{% url 'xtb:page_views' 'test' %}">Nemis tili</a></li>
+                  </ul>
+                </div><a class="all-industries" href="{% url 'xtb:page_views' 'test' %}">Boshqa fanlar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section class="featured-cases h3-featured-cases">
+      <div class="azir-container" data-aos="fade-left">
+        <div class="featured-cases_top d-flex align-items-center justify-content-between flex-column flex-md-row">
+          <div class="featured-cases--title text-center text-md-left">
+            <h1 class="h1">So'nggi Xabarlar</h1>
+            <p>Boshqarma faoliyatiga va tuman maktablar faoliyatiga oid xabar, yangilik va e'lonlar. </p>
+          </div><a class="text-center" href="{% url 'xtb:page_views' 'blog' %}">Barcha xabarlarni o'qish</a>
+        </div>
+        <div class="featured-cases_bottom featured-cases_bottom__style2">
+          <div class="cases-group" data-slick="{&quot;slidesToShow&quot;: 3}">
+            
+            <div class="case-block">
+              <div class="case-content">
+                <p class="case-date">26 Nov 2019</p><a class="case-title" href="#"> “ZIYO-ZUKKO TA’LIM MASKANI” NTMda shaxmat bo`yicha kichik chempionat bo`lib o`tdi.</a>
+                <p class="case-describe">№ Sinf O`quvchi ism va familiyasi O`rinlar O`G’IL   BOLALAR 1. 1-“G” Qobilov Baxtiyorjon I o`rin 2. 1-“V” Najimov Umarjon II o`rin 3. 1-“B” Turaxanov Xabibullaxon III o`rin 4..</p><a class="case-button" href="{% url 'xtb:page_views' 'blog-details' %}"><i class="arrow_right"></i></a>
+              </div><img src="/static/assets/images/news.jpeg" alt="">
+            </div>
+            
+            <div class="case-block">
+              <div class="case-content">
+                <p class="case-date">26 Nov 2019</p><a class="case-title" href="#">«Konstitutsiya-baxtimiz qomusi»</a>
+                <p class="case-describe">Ziyo-zukko ta'lim maskanida. Özbekiston Respublikasi Konstitutsiyasining 27 yilligi munosabati bilan Ziyo-zukko ta'lim maskanida "Konstitutsiya-baxtimiz qomusi"</p><a class="case-button" href="{% url 'xtb:page_views' 'blog-details' %}"><i class="arrow_right"></i></a>
+              </div><img src="/static/assets/images/news2.jpeg" alt="">
+            </div>
+            <div class="case-block">
+              <div class="case-content">
+                <p class="case-date">26 Nov 2019</p><a class="case-title" href="{% url 'xtb:page_views' 'blog-details' %}">Alifbe bayrami.2019</a>
+                <p class="case-describe">В дни школьных каникул в нашей школе работает детский лагерь.В программу которого входит множество развлечений по интересам учащихся. Это разнообразные кружки (тейквандо, </p><a class="case-button" href="#"><i class="arrow_right"></i></a>
+              </div><img src="/static/assets/images/news3.jpeg" alt="">
+            </div>
+            <div class="case-block">
+              <div class="case-content">
+                <p class="case-date">26 Nov 2019</p><a class="case-title" href="{% url 'xtb:page_views' 'blog-details' %}">Alifbe bayrami.2019</a>
+                <p class="case-describe">В дни школьных каникул в нашей школе работает детский лагерь.В программу которого входит множество развлечений по интересам учащихся. Это разнообразные кружки (тейквандо, </p><a class="case-button" href="#"><i class="arrow_right"></i></a>
+              </div><img src="/static/assets/svg/pe.svg" alt="">
+            </div>
+          </div>
+          <div class="cases_slider-control text-center"></div>
+        </div>
+      </div>
+    </section>
+      <section class="h4-section4">
+      <div class="azir-container">
+        <div class="layout-2col-ti">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="layout-2col-ti_left">
+                <div class="h4-section4_introduction">
+                  <h1 class="h1">Masofaviy Ta'lim!</h1>
+                  <p class="p">Ushbu sahifa orqali ustozlar o'quvchilarga dars materiallarini yuklab borishadi, o'quvchi istalgan vaqtda o'zi uchun kerakli ma'lumotlarni olishi mumkin bo'ladi. </p>
+                  <ul>
+                    <li>Video darslar</li>
+                    <li>Mavzu konspektlari</li>
+                    <li>Taqdimotlar (slayd)</li>
+                    <li>Dars ishlanmalar</li>
+                    <li>Barcha fanlardan testlar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="layout-2col-ti_right"><img src="/static/assets/images/laptop-video-learning.svg" alt="Masofaviy ta'lim"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--<section class="call-to-action">
+      <div class="azir-container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-lg-9">
+            <div class="call-to-action_content text-center text-lg-left">
+              <h3 class="h3 cta-title">Savol va takliflaringizni bemalol bizning elektron qabulxonaga yozib qoldirishingiz mumkin!</h3>
+              <p class="p cta-pragraph">Buning uchun Ismingiz va Email manzilingizni yozib qoldiring. </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 text-lg-right text-center"><a class="cta-btn btn-pink" href="{% url 'xtb:page_views' 'contact' %}">Bog'lanish</a></div>
+        </div>
+      </div>
+    </section>-->
+  
+
+    <section class="h1-section2">
+      <div class="azir-container">
+        <div class="welcome-block">
+          <div class="layout-2col-ti">
+            <div class="row justify-content-between">
+              <div class="col-12 col-lg-6">
+                <div class="layout-2col-ti_left">
+                  <div class="welcome-block_img" data-aos="fade-left" data-aos-duration="1000"><img src="/static/assets/images/news3.jpeg" width="100%" alt="Welcome"></div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="layout-2col-ti_right">
+                  <div class="welcome-block_content" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="section-header-style-3 text-center text-lg-left">
+                      <h1 class="h1">Maktab Haqida</h1>
+                      <h6 class="h6">Andijon viloyati Xalq Ta'lim Boshqarmasi Shahrixon tuman Xalq Ta'lim Boshqarmasi</h6>
+                      <p class="p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, cupiditate, temporibus. Vitae accusantium, quidem distinctio similique! Maxime dolor voluptatem fuga delectus deserunt minima asperiores, quidem ut ipsum dolore vero, vel?
+                      </p><a class="btn-outline-red" href="{% url 'xtb:page_views' 'chiefs' %}">Batafsil</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-part data-part mt-3">
+        <div class="h1-section2"> 
+          <div class="data-proof">
+            <div class="azir-container">
+              <div class="text-center">
+          <h1 class="h1 mb-2">Tumanda!</h1>
+        </div>
+              <div class="row">
+                <div class="col-6 col-sm-3">
+                  <div class="data-group text-center mb30-md">
+                    <div class="data-icon"><img src="/static/assets/svg/school.svg" width="130" height="130" alt=""></div>
+                    <div class="data-content">
+                      <h1 class="data-number heading numscroller" data-min="2" data-max="68" data-delay="5" data-increment="5">68</h1>
+                      <h5 class="data-type h5">Maktablar</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="data-group text-center mb30-md">
+                    <div class="data-icon"><img src="/static/assets/svg/teachers.svg" width="130" height="130" alt=""></div>
+                    <div class="data-content">
+                      <h1 class="data-number heading numscroller" data-min="1" data-max="7235" data-delay="5" data-increment="5">7235</h1>
+                      <h5 class="data-type h5">Ustozlar</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="data-group text-center">
+                    <div class="data-icon"><img src="/static/assets/svg/kids.svg" width="130" height="130" alt=""></div>
+                    <div class="data-content">
+                      <h1 class="data-number heading numscroller" data-min="1" data-max="32365" data-delay="2" data-increment="3">32365+<span>+</span></h1>
+                      <h5 class="data-type h5">O'quvchilar</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="data-group text-center">
+                    <div class="data-icon"><img src="/static/assets/svg/users.svg" width="130" height="130" alt=""></div>
+                    <div class="data-content">
+                      <h1 class="data-number heading numscroller" data-min="1" data-max="3920" data-delay="5" data-increment="5">3920</h1>
+                      <h5 class="data-type h5">Foydalanuvchilar</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+   {% endblock %}
